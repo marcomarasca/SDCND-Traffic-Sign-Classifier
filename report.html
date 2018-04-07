@@ -13357,7 +13357,7 @@ Pre-processing: 100%|██████████| 12630/12630 [00:01&lt;00:00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Final-Model">Final Model<a class="anchor-link" href="#Final-Model">&#182;</a></h4><p>In the following we define our final model, choosen after several hours of experimentation and fine tuning. The model follows after the VGG architecture, having multiple convolutions with maxpooling and dropout and finally using a fully connected layer. While there are probably better model architectures out there (e.g. ResNet, inception etc) the VGG is very simple to implement and I added different pieces to improve the model such as L2 regularization and batch normalization.</p>
+<h4 id="Final-Model">Final Model<a class="anchor-link" href="#Final-Model">&#182;</a></h4><p>In the following we define our final model, choosen after several hours of experimentation and fine tuning. The model follows after the VGG architecture, having multiple convolutions followed by subsampling with maxpooling and finally using a fully connected layer with dropout. While there are probably better model architectures out there (e.g. ResNet, inception etc) the VGG is very simple to implement and I added different pieces to improve the model such as L2 regularization and batch normalization.</p>
 
 </div>
 </div>
@@ -15203,7 +15203,7 @@ Turn right ahead
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can see that the model seems to capture the more relevant features of the image such as the border of the sign and the constrast of the drawing inside the sign even when rotate (e.g. the 20km/h limit sign).</p>
+<p>We can see that the model seems to capture the more relevant features of the image such as the border of the sign and the constrast of the drawing inside the sign even when rotated (e.g. the 20km/h limit sign).</p>
 <p>We can try to do the same on a LeNet training for a few epochs and see the result:</p>
 
 </div>
